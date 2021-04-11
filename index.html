@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>String</title>
+
+	<link rel="stylesheet" type="text/css" href="style/normalize.css" />
+
+	<link rel="stylesheet" type="text/css" href="style/main.css" />
+</head>
+<body>
+	
+
+
+	<!--	Header		-->
+	<header class="encabezado">
+		<a href="#">
+			<h1 class="encabezado__titulo">String.com</h1>
+		</a>
+	</header>
+
+
+
+
+
+
+	<!--	navegacion	 -->
+	<nav class="navegacion">
+		<div class="contenedor navegacion__contenido">
+			<a class="navegacion__enlaces" href="">inicio</a>
+			<a class="navegacion__enlaces" href="">blog</a>
+			<a class="navegacion__enlaces" href="">informacion</a>
+			<a class="navegacion__enlaces" href="">Contactanos</a>
+		</div>
+	</nav>
+
+
+
+	<!--  	agrupando contenido Principal y aside	-->
+	<main class="contenedor agrupando-princial-content">
+
+
+
+		<!--	contenido Principal 	-->
+		<div class="contenedor princial-content">
+			
+			<h2 class="princial-content__titulo">Clase String en js</h2>
+
+
+
+			<h3 class="princial-content__seccion"> Propiedades</h3>
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_length">length()</h3>
+				<p class="seccion__p sprcn">
+					Devuelve la longitud de la cadena, lo que resulta muy importante ya que podremos utilizar bucles para recorrer cada una de las letras
+				</p>
+				<p class="seccion__codeEjem sprcn">codigo javascript</p>
+				<div class="seccion__vistazoCode sprcn">
+					<p class="seccion__pCode">
+						var cadena = "JavaScript, ¡Inspírate!";<br />
+						
+						console.log("JavaScript, ¡Inspírate! tiene " + cadena.length + " caracteres\.");<br />
+						
+						console.log("Una cadena vacía tiene " + ''.length + " caracteres.");<br />
+					</p>
+				</div><!--.seccion__vistazoCode-->
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_length" value="cadena de prueba" />
+					<div class="seccion__resultado " id="resultado_length">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_length">A Darle!</button>
+			</section>
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_concat">concat()</h3>
+				<p class="seccion__p sprcn">
+					concatena una cadena
+				</p>
+				<p class="seccion__codeEjem sprcn">codigo javascript</p>
+				<div class="seccion__vistazoCode sprcn">
+					<p class="seccion__pCode">
+						var cadena = "JavaScript, ¡Inspírate!";<br />
+						
+						console.log("JavaScript, ¡Inspírate! tiene " + cadena.concat + " caracteres\.");<br />
+						
+						console.log("Una cadena vacía tiene " + ''.concat + " caracteres.");<br />
+					</p>
+				</div><!--.seccion__vistazoCode-->
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_concat" value="cadena de prueba" />
+					<input type="text" class="seccion__input" id="input_concat2" value=" hola!" />
+					<div class="seccion__resultado " id="resultado_concat">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_concat">A Darle!</button>
+			</section>
+
+
+
+
+
+
+
+
+			<h2 class="princial-content__titulo sprcn"> de aqui me dio flojera akq voy!!!</h2>
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_startsWith">statrsWith()</h3>
+				<p class="seccion__p sprcn">
+					envia un "true" si el principio de la cadena son iguales y un "false" si no lo son. tambien en 
+					hay un endwith() que es lo mismo pero al final, Y tambien esta el includes() que es lo mismo, otra vez, 
+					pero en cualquier parte de la cadena o en el medio.
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_startsWith" value="cadena de prueba" />
+					<input type="text" class="seccion__input" id="input_startsWith2" value=" hola!" />
+					<div class="seccion__resultado " id="resultado_startsWith">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_startsWith">A Darle!</button>
+			</section>
+
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_indexOf">indexOf()</h3>
+				<p class="seccion__p sprcn">
+					devuelve la posicion del texto que quiereas buscar.
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_indexOf" value="cadena de prueba" />
+					<input type="text" class="seccion__input" id="input_indexOf2" value=" hola!" />
+					<div class="seccion__resultado " id="resultado_indexOf">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_indexOf">A Darle!</button>
+			</section>
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_lastIndexOf">lastIndexOf()</h3>
+				<p class="seccion__p sprcn">
+					devuelve la posicion del texto que quiereas buscar.
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_lastIndexOf" value="cadena de prueba" />
+					<input type="text" class="seccion__input" id="input_lastIndexOf2" value=" hola!" />
+					<div class="seccion__resultado " id="resultado_lastIndexOf">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_lastIndexOf">A Darle!</button>
+			</section>
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_padStart">padStart()</h3>
+				<p class="seccion__p sprcn">
+					rellena la cadena con un carracte, tamben esta el padEnd() 
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_padStart" value="abc" />
+					<input type="text" class="seccion__input" id="input_padStart2" value=" hola!" />
+					<div class="seccion__resultado " id="resultado_padStart">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_padStart">A Darle!</button>
+			</section>
+
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_repeat">repeat()</h3>
+				<p class="seccion__p sprcn">
+					repite el texto as veces que quieras
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_repeat" value="ab " />
+					<input type="number" class="seccion__input" id="input_repeat2" />
+					<div class="seccion__resultado " id="resultado_repeat">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_repeat">A Darle!</button>
+			</section>
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_split">split()</h3>
+				<p class="seccion__p sprcn">
+					El split convierte una array a resultado y el split los separo por "," para crear la array
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_split" value="a,b,c,d,f" />
+					<input type="number" class="seccion__input" id="input_split2" />
+					<div class="seccion__resultado " id="resultado_split">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_split">A Darle!</button>
+			</section>
+
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_substring">substring()</h3>
+				<p class="seccion__p sprcn">
+					substring que sub divide un string en otros 
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_substring" value="a,b,c,d,f" />
+					<input type="number" class="seccion__input" id="input_substring2" />
+					<input type="number" class="seccion__input" id="input_substring3" />
+					<div class="seccion__resultado " id="resultado_substring">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_substring">A Darle!</button>
+			</section>
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_toLowerCase">toLowerCase()</h3>
+				<p class="seccion__p sprcn">
+					toLowerCase hace que el texto sea en minusculas
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_toLowerCase" value="HOLA QUE HACES" />
+					<div class="seccion__resultado " id="resultado_toLowerCase">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_toLowerCase">A Darle!</button>
+			</section>
+
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_toUpperCase">toUpperCase()</h3>
+				<p class="seccion__p sprcn">
+					toUpperCase hace que el texto sea en MAÑUSCULAS
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_toUpperCase" value="hola que haces" />
+					<div class="seccion__resultado " id="resultado_toUpperCase">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_toUpperCase">A Darle!</button>
+			</section>
+
+
+
+
+
+
+			<section class="seccion">
+				<h3 class="seccion__titulo" id="clase_trim">trim()</h3>
+				<p class="seccion__p sprcn">
+					trim elemina todas los espacios de una string
+				</p>
+				
+				<div class="seccion__ejemplo sprcn">
+					<input type="text" class="seccion__input" id="input_trim" value="hola que haces" />
+					<div class="seccion__resultado " id="resultado_trim">
+						
+					</div>
+				</div><!--.seccion__ejemplo-->
+
+				<button type="button" class="btn sprcn" id="btn_trim">A Darle!</button>
+			</section>
+
+
+		</div>
+
+
+
+
+
+		<!--	aside o  enlaces a los post		-->
+		<aside class="contenedor asider">
+			<a href="#clase_length" class="">length()</a>
+			<a href="#clase_concat" class="">concat()</a>
+			<a href="#clase_statrsWith" class="">statrsWith()</a>
+			<a href="#clase_indexOf" class="">indexOf()</a>
+			<a href="#clase_lastIndexOf" class="">lastIndexOf()</a>
+			<a href="#clase_padStart" class="">padStart()</a>
+			<a href="#clase_repeat" class="">repeat()</a>
+			<a href="#clase_split" class="">split()</a>
+			<a href="#clase_substring" class="">substring()</a>
+			<a href="#clase_toLowerCase" class="">toLowerCase()</a>
+			<a href="#clase_toUpperCase" class="">toUpperCase()</a>
+			<a href="#clase_trim" class="">trim()</a>
+		</aside>
+
+	</main><!-- agrupando-princial-content-->
+
+
+
+
+
+
+
+	<!-- 	footer	   -->
+	<footer class="footer">
+		<div class="contenedor">
+			hola que tal
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
